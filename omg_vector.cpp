@@ -46,7 +46,8 @@ namespace omg {
 int main(int argc, char *argv[]) {
 	{
 		auto vec = omg::vector<int>(
-			{0, 1, 4} // This is an initializer list
+			{0, 1, 4}, // This is an initializer list
+			{.reserve = 10}
 		);
 		std::cerr << vec.size();	 // 3
 	}
